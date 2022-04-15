@@ -35,7 +35,7 @@ def drawDiscs(Sticks, Red, Green, Blue):
 
         stddraw.line(9 - (LINE_WIDTH * (0.9 ** Sticks[2][i]) / 2), h, 9 + (LINE_WIDTH * (0.9 ** Sticks[2][i]) / 2), h)
         h += 1.5 * PEN_RADIUS * (0.9 ** Sticks[2][i])
-    stddraw.show(1000)
+    stddraw.show(50)
 
 def moves(n,F, H, D, Red, Green, Blue,Sticks):
     if n==0:
@@ -58,8 +58,6 @@ def drawSticks():
     stddraw.line(3, 0, 3, 4)
     stddraw.line(6, 0, 6, 4)
     stddraw.line(9, 0, 9, 4)
-
-    stddraw.show(20)
 
 def main():
     stddraw.setCanvasSize(1000, 300)
